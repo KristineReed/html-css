@@ -1,0 +1,15 @@
+header{
+	color: #333333;
+	font-family:arial,"Lucida Console", serif;
+	}
+body{
+	font-family:arial,"Lucida Console", serif;
+	font-size: 12pt;
+	}
+main{	
+	font-family:arial,"Lucida Console", serif;
+	font-size: 14pt;
+	}
+.nav{
+	display:none;
+	}

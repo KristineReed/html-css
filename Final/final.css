@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+  }
+  
+header,main,nav,footer, figure, figcaption,section,article 
+{
+    display: block;
+}
+
+body {
+    color: #404F4F;
+    font-family: Arial,"Lucida Console", sans-serif;
+}
+
+header {
+    color: #000000;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 120px;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 5em;
+}
+
+.nav {
+    background-color:#333;
+    overflow: hidden;
+}
+
+.nav a {
+    float: top;
+    color:white;
+    width:auto;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    background-color:#5F9EA0;
+    color: black;
+}
+
+
+.nav a:active {
+    background-color:#9df8f9;
+    color: white;
+}
+nav ul li{
+    font-size:5em;
+    }
+input[type=submit] {
+    background-color:#000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-right:0;
+    margin-left:80%;
+    }
+    
+h1 {
+    margin-bottom: 0;
+    font-family: Georgia, Times, "Lucida Console", serif;
+    margin-top: 0;
+    font-size:5em;  
+}
+
+h2 {
+    color: #3399CC;
+    font-family: Georgia, Times, "Lucida Console", serif;
+    margin-bottom:0;
+    font-size:2em; 
+}
+
+h3 {
+    color: #FFB6C1;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+h4{
+	color: #000000;
+    font-family: Georgia, Times, "Lucida Console", serif;
+    margin-top:0;
+    font-size:1em;
+    position: center;
+
+}
+.row {
+    margin: 8px -16px;
+}
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+    }
+    td, th { 
+    padding: 5px;
+    border: 1px solid #800080; 
+}
+td { 
+    text-align: center; 
+    }
+text {
+    text-align: left; 
+ }
+tr:nth-of-type(even) { 
+   background-color:#E6E6FA;
+ }
+footer {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	align-content:center;
+	width: 33.33; 
+	padding: 45px;
+    }
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    background-color:white;
+    width: 80%;
+    min-width: 50%;
+    max-width: 70%;
+    box-shadow: 3px 3px 3px 3px #aaafaf;
+    
+}
+
+main {
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    background: white;
+    margin-left:auto;
+    margin-right:auto;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+@media only screen and (max-width: 64em) {
+    body {
+        margin: 0;
+        background-color: #ffffff;
+    }
+    #wrapper {
+        min-width: 0;
+        width: auto;
+        box-shadow: none;
+    }
+    header{ 
+        min-width:0;
+        width:auto;
+        box-shadow:none;
+        border:none;
+        }
+    h1{
+     padding:0.5em;
+     padding-bottom: 0.5em;
+     padding-left: 0;
+     height:auto;
+     }
+main {
+        margin-left: 0;
+    }
+nav {
+        float: top;
+        width: auto;
+        text-align: center;
+        padding: 0.5em;
+    }
+nav li {
+        display: inline;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+    }
+  
+    footer {
+        margin-left: 0
+    }
+}
+
+@media only screen and (max-width: 37.5em) { 
+    main {
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 90%
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    nav {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        border-bottom: 2px solid #330000;
+    }
+    nav a {
+        display: block;
+    }
+   
+    #mobile {
+        display: inline;
+    }
+    #desktop {
+        display: none;
+    }
+    
